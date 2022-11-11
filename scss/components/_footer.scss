@@ -1,0 +1,169 @@
+.footer-contact {
+  @media screen and (max-width: 512px) {
+    text-align: center;
+  }
+}
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo span:first-child {
+  color: var(--link-color);
+}
+.footer-logo-right-side {
+  color: #ffffff;
+}
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.footer-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-item {
+  &:first-child {
+    margin-bottom: 9px;
+  }
+}
+.footer-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*-----------------FOOTER_SOC----------*/
+.footer-soc {
+}
+.footer-soc-title {
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 20px;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--link-color);
+  }
+}
+.footer-soc-icon {
+  fill: var(--main-text-color);
+}
+.footer-subscribe {
+  margin-left: 23px;
+  padding-top: 12px;
+  @media screen and (max-width: 1176px) {
+    margin: 0 auto;
+  }
+}
+.text-subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  color: #ffffff;
+  @media screen and (max-width: 660px) {
+    text-align: center;
+  }
+}
+.email-input-wrap {
+  display: flex;
+  margin-top: 20px;
+}
+.input-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  outline: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (max-width: 400px) {
+    width: 90vw;
+  }
+}
+.button-follow {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  background-color: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: block;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  @media screen and (max-width: 660px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 400px) {
+    width: 90vw;
+  }s
+}
+.wrap-follow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  @media screen and (max-width: 660px) {
+    display: block;
+  }
+}
