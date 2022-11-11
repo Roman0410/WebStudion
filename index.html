@@ -538,11 +538,16 @@
           </svg>
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form>
+        <form
+          name="myForm"
+          action="/action_page.php"
+          onsubmit="return validateForm()"
+          method="post"
+        >
           <label>
             <span class="modal-label-text">Ім'я</span>
             <span class="input-wrap">
-              <input type="text" class="modal-input" name="user-name" />
+              <input type="text" class="modal-input" name="fname" />
               <svg class="modal-input-icon" width="18" height="18">
                 <use
                   href="./img/symbol-defs.svg#icon-person-black-18dp-1"
@@ -553,7 +558,12 @@
           <label>
             <span class="modal-label-text">Телефон</span>
             <span class="input-wrap">
-              <input type="text" class="modal-input" name="user-tell" />
+              <input
+                type="text"
+                class="modal-input"
+                name="user-tell"
+                required
+              />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use>
               </svg>
@@ -562,7 +572,12 @@
           <label>
             <span class="modal-label-text">Пошта</span>
             <span class="input-wrap">
-              <input type="text" class="modal-input" name="user-mail" />
+              <input
+                type="text"
+                class="modal-input"
+                name="user-mail"
+                required
+              />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use>
               </svg>
@@ -603,5 +618,6 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/validation.js"></script>
   </body>
 </html>

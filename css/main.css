@@ -713,6 +713,11 @@ label {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
+@media screen and (max-width: 530px) {
+  .modal {
+    width: 95%;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -841,10 +846,14 @@ label {
   margin-top: 20px;
 }
 .check-text a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
   color: #2196f3;
   margin-left: 3px;
+}
+@media screen and (max-width: 530px) {
+  .check-text a {
+    display: contents;
+    text-underline-offset: 2px;
+  }
 }
 .check-text span {
   width: 16px;
@@ -886,9 +895,16 @@ label {
 
 .filters-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 56px;
+}
+
+@media screen and (max-width: 400) {
+  .filters-item {
+    width: 95%;
+  }
 }
 
 .filters-btn {

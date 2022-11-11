@@ -1,8 +1,14 @@
 .filters-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 56px;
+}
+.filters-item {
+  @media screen and (max-width: 400) {
+    width: 95%;
+  }
 }
 .filters-btn {
   font-family: "Roboto";

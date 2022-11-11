@@ -24,7 +24,7 @@
 
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container header-container">
         <nav class="navigation">
           <a class="navigation__logo" href="index.html"
             ><span>Web</span>Studio</a
@@ -34,9 +34,7 @@
               <a class="navigation__link" href="index.html">Студія</a>
             </li>
             <li>
-              <a
-                class="navigation__link current under-line"
-                href="portfolio.html"
+              <a class="navigation__link current under-line" href="#"
                 >Портфоліо</a
               >
             </li>
@@ -45,23 +43,22 @@
             </li>
           </ul>
         </nav>
-        <div class="contact">
-          <ul class="contact__list">
-            <li class="contact__item">
-              <a class="contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./img/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+        <button class="mob-menu-open" data-menu-open>
+          <img src="./img/menu_40px.svg" alt="" />
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <button class="mob-menu-close" data-menu-close>
+            <img src="./img/close_40px.svg" alt="" />
+          </button>
+          <ul class="mob-menu__list">
+            <li>
+              <a class="mob-menu__link current-mob" href="#">Студія</a>
             </li>
-            <li class="contact__item">
-              <a class="contact__link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+            <li>
+              <a class="mob-menu__link" href="portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="mob-menu__link" href="#">Контакти</a>
             </li>
           </ul>
         </div>

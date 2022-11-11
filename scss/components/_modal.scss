@@ -19,6 +19,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @media screen and(max-width:530px) {
+    width: 95%;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -129,10 +132,12 @@
   align-items: center;
   margin-top: 20px;
   & a {
-    text-decoration: underline;
-    text-underline-offset: 2px;
     color: #2196f3;
     margin-left: 3px;
+    @media screen and(max-width:530px) {
+      display: contents;
+      text-underline-offset: 2px;
+    }
   }
   & span {
     width: 16px;
