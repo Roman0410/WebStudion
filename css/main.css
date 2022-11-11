@@ -109,6 +109,7 @@ label {
 }
 
 .navigation {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -240,6 +241,12 @@ label {
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .hero__slogan {
+    max-width: 500px;
+    font-size: 35px;
+  }
 }
 
 .hero__button {
@@ -665,6 +672,11 @@ label {
 @media screen and (max-width: 660px) {
   .button-follow {
     width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .button-follow {
+    width: 90vw;
   }
 }
 
